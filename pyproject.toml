@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "generate-random-solid-solution"
+name = "GenerateRandomSolidSolution"
 version = "2023.0"
 description = "A Python script modifier for OVITO to generate random solid solutions in whole or selected subregions of a sample."
 authors = [{name = "Daniel Utt", email = "utt@ovito.org"}]
