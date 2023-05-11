@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "GenerateRandomSolidSolution"
 version = "2023.0"
-description = "A Python script modifier for OVITO to generate random solid solutions in whole or selected subregions of a sample."
+description = "OVITO Python script modifier to chang the particle type values to create a random solid solution of a given composition."
 authors = [{name = "Daniel Utt", email = "utt@ovito.org"}]
 maintainers = [{name = "Daniel Utt", email = "utt@ovito.org"}]
 license = {text = "MIT License"}
