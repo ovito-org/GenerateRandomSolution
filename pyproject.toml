@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "GenerateRandomSolidSolution"
+name = "Generate Random Solid Solution"
 version = "2023.0"
 description = "OVITO Python script modifier to chang the particle type values to create a random solid solution of a given composition."
 keywords = ["ovito", "python-script-modifier"]
