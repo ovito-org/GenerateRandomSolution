@@ -17,7 +17,7 @@ requires-python = ">=3.7"
 repository = "https://github.com/nnn911/generate-random-solid-solution"
 
 [project.entry-points.'OVITO.Modifier']
-GenerateRandomSolidSolution = "GenerateRandomSolidSolution:GenerateRandomSolidSolution"
+"Generate Random Solid Solution" = "GenerateRandomSolidSolution:GenerateRandomSolidSolution"
 
 [tool.setuptools.packages.find]
 where = ["src"]
