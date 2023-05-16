@@ -1,8 +1,8 @@
 # Generate Random Solution
-OVITO Python script modifier to chang the particle type values to create a random solid solution of a given composition.
+OVITO Python script modifier to change the particle type values to create a random solid solution of a given composition.
 
 ## Description
-Python script modifier for OVITO that changes the particle types in the whole data collection or a selected subset of particles to match a user provided target concentration. The new particle types are distributed randomly to approximate a perfect random solid solution. 
+Python script modifier for OVITO that changes the particle types in the whole data collection or a selected subset of particles to match a user-provided target concentration. The new particle types are distributed randomly to approximate a perfect random solid solution. 
 
 ## Parameters 
 - `only_selected` / "only selected": Apply the modifier only to the selected particles.
@@ -12,7 +12,7 @@ Python script modifier for OVITO that changes the particle types in the whole da
 ## Example
 
 ## Technical information / dependencies
-- Tested on OVITO 3.x.x
+- Tested on OVITO 3.9.0
 
 ## Contact
 Daniel Utt (utt@ovito.org)
