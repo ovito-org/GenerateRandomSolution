@@ -2,7 +2,7 @@
 *OVITO* [Python script modifier](https://docs.ovito.org/python/introduction/custom_modifiers.html) to change the particle type values to create a random solution of a given composition.
 
 ## Description
-Python script modifier for *OVITO* that changes the particle types in the whole data collection or a selected subset of particles to match a user-provided target concentration. The new particle types are distributed randomly to approximate a perfect random solution. The modifier can be installed either into *OVITO Pro* or the [`ovito`](https://pypi.org/project/ovito/) Python module using *pip*.
+Python script modifier for *OVITO* that changes the particle types in the whole data collection or a selected subset of particles to match a user-provided target concentration. The new particle types are distributed randomly to approximate a perfect random solution. The modifier can be installed either into *OVITO Pro* or the [*OVITO* Python module](https://pypi.org/project/ovito/) Python module using *pip*.
 
 ## Parameters 
 - `only_selected` / "only selected": Apply the modifier only to the selected particles.
@@ -31,7 +31,7 @@ pip install --user https://github.com/nnn911/GenerateRandomSolution/main/archive
 - Please note that the `--user` tag is recommended but optional and depends on your Python installation.
 
 ## Technical information / dependencies
-- Tested on OVITO 3.9.0
+- Tested on *OVITO* 3.9.0
 
 ## Contact
 - Daniel Utt (utt@ovito.org)
