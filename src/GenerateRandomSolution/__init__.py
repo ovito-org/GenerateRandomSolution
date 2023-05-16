@@ -4,16 +4,16 @@ import numpy as np
 from traits.api import Bool, Int, ListFloat
 
 
-class GenerateRandomSolidSolution(ModifierInterface):
+class GenerateRandomSolution(ModifierInterface):
     only_selected = Bool(False, label="Only selected")
-    conc = ListFloat([0.5, 0.5], label="Concentrations", minlen=1)
+    concentrations = ListFloat([0.5, 0.5], label="Concentrations", minlen=1)
     seed = Int(1234, label="Seed")
 
     def modify(self, data: DataCollection, frame: int, **kwargs):
         if (self.only_selected) and not ("Selection" in data.particles.keys()):
             raise KeyError("No selection defined")
-        if not np.isclose(np.sum(self.conc), 1):
-            raise ValueError(f"Concentrations: {np.sum(self.conc)} != 1")
+        if not np.isclose(np.sum(self.concentrations), 1):
+            raise ValueError(f"Concentrations: {np.sum(self.concentrations)} != 1")
 
         rng = np.random.default_rng(self.seed)
 
@@ -24,7 +24,7 @@ class GenerateRandomSolidSolution(ModifierInterface):
         )
 
         # Extend particle types if necessary
-        while len(self.conc) > len(data.particles["Particle Type"].types):
+        while len(self.concentrations) > len(data.particles["Particle Type"].types):
             new_id = len(data.particles["Particle Type"].types) + 1
             data.particles_["Particle Type_"].types.append(
                 ParticleType(
@@ -36,9 +36,9 @@ class GenerateRandomSolidSolution(ModifierInterface):
 
         # Populate new concentration array
         new_types = []
-        for i, c in enumerate(self.conc):
+        for i, c in enumerate(self.concentrations):
             new_types += [i + 1] * int(count * c)
-            x_p = np.cumsum(self.conc)
+            x_p = np.cumsum(self.concentrations)
 
         while len(new_types) < count:
             new_types.append(np.sum(x_p < rng.random()) + 1)

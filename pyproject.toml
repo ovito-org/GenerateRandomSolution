@@ -3,9 +3,9 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "GenerateRandomSolidSolution"
+name = "GenerateRandomSolution"
 version = "2023.0"
-description = "OVITO Python script modifier to chang the particle type values to create a random solid solution of a given composition."
+description = "OVITO Python script modifier to chang the particle type values to create a random solution of a given composition."
 keywords = ["ovito", "python-script-modifier"]
 authors = [{name = "Daniel Utt", email = "utt@ovito.org"}]
 maintainers = [{name = "Daniel Utt", email = "utt@ovito.org"}]
@@ -13,15 +13,12 @@ license = {text = "MIT License"}
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
-    "ovito >= 3.9.0",
+    "ovito >= 3.9.0.dev35",
     "numpy >= 1.22",
 ]
 
 [project.urls]
-repository = "https://github.com/nnn911/generate-random-solid-solution"
+repository = "https://github.com/nnn911/GenerateRandomSolution"
 
 [project.entry-points.'OVITO.Modifier']
-"Generate Random Solid Solution" = "GenerateRandomSolidSolution:GenerateRandomSolidSolution"
-
-[tool.setuptools.packages.find]
-where = ["src"]
+"Generate Random  Solution" = "GenerateRandomSolution:GenerateRandomSolution"
