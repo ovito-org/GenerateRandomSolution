@@ -21,4 +21,4 @@ dependencies = [
 repository = "https://github.com/nnn911/GenerateRandomSolution"
 
 [project.entry-points.'OVITO.Modifier']
-"Generate Random  Solution" = "GenerateRandomSolution:GenerateRandomSolution"
+"Generate Random Solution" = "GenerateRandomSolution:GenerateRandomSolution"
