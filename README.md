@@ -22,11 +22,11 @@ Python modifier for *OVITO* that changes the particle types in the whole data co
 ## Installation
 - *OVITO PRO* built-in Python interpreter
 ```
-ovitos -m pip install --user https://github.com/nnn911/GenerateRandomSolution/main/archive.zip
+ovitos -m pip install --user git+https://github.com/nnn911/GenerateRandomSolution.git
 ``` 
 - Standalone Python package or Conda environment
 ```
-pip install --user https://github.com/nnn911/GenerateRandomSolution/main/archive.zip
+pip install --user git+https://github.com/nnn911/GenerateRandomSolution.git
 ```
 - Please note that the `--user` tag is recommended but optional and depends on your Python installation.
 
