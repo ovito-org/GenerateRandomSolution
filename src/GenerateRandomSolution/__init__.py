@@ -1,3 +1,6 @@
+#### Generate Random Solution
+# Documentation: https://github.com/nnn911/GenerateRandomSolution
+
 from ovito.data import DataCollection, ParticleType, DataTable, ElementType
 from ovito.pipeline import ModifierInterface
 import numpy as np
