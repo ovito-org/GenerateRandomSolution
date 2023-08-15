@@ -21,3 +21,10 @@ repository = "https://github.com/nnn911/GenerateRandomSolution"
 
 [project.entry-points.'OVITO.Modifier']
 "Generate Random Solution" = "GenerateRandomSolution:GenerateRandomSolution"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error",
+    "ignore:module 'sre_parse' is deprecated:DeprecationWarning",
+    "ignore:module 'sre_constants' is deprecated:DeprecationWarning",
+]
