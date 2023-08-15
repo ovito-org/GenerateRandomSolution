@@ -10,7 +10,7 @@ class GenerateRandomSolution(ModifierInterface):
     seed = Int(1234, label="Seed")
 
     def modify(self, data: DataCollection, frame: int, **kwargs):
-        if (self.only_selected) and not ("Selection" in data.particles.keys()):
+        if (self.only_selected) and "Selection" not in data.particles.keys():
             raise KeyError("No selection defined")
         if not np.isclose(np.sum(self.concentrations), 1):
             raise ValueError(f"Concentrations: {np.sum(self.concentrations)} != 1")
