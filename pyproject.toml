@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "GenerateRandomSolution"
-version = "2023.0"
+version = "2023.1"
 description = "OVITO Python modifier to chang the particle type values to create a random solution of a given composition."
 keywords = ["ovito", "python-modifier"]
 authors = [{name = "Daniel Utt", email = "utt@ovito.org"}]
 maintainers = [{name = "Daniel Utt", email = "utt@ovito.org"}]
-license = {text = "MIT License"}
+license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
