@@ -32,7 +32,7 @@ Python modifier for *OVITO* that changes the particle types in the whole data co
   ```
 
 ## Technical information / dependencies
-- Tested on *OVITO* 3.9.0
+- Tested on *OVITO* 3.9.1
 
 ## Contact
 - Daniel Utt (utt@ovito.org)
