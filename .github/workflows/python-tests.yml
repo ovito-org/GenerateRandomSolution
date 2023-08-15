@@ -33,7 +33,7 @@ jobs:
     - name: Install apt dependencies
       if:  matrix.os == 'ubuntu-latest'
       run: |
-        sudo apt install -y libegl1 libegl1-mesa libegl-mesa0
+        sudo apt install -y libegl1 libegl1-mesa libegl-mesa0 libgl1-mesa-glx
     - name: Install python dependencies
       run: |
         python -m pip install --upgrade pip
