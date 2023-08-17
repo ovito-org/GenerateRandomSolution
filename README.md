@@ -16,8 +16,8 @@ Python modifier for OVITO that changes the particle types in the whole data coll
 1. [Example 02](Examples/example_02.py) loads the same [structure file](Examples/fcc.lmp), selects all atoms with a relative position < 0.5 and changes the composition of the selected atoms from type 1 to a random solid solution containing 3 types with concentrations of 0.25, 0.5, and 0.25, respectively. The overall sample composition will not match these concentrations as the unselected region will still be of type 1.
 
 - The following two figures show the same two examples in the OVITO Pro GUI.
-![Example 01](Examples/example_01.png)
-![Example 02](Examples/example_02.png)
+![Example 01](examples/example_01.png)
+![Example 02](examples/example_02.png)
 
 ## Installation
 - OVITO Pro [integrated Python interpreter](https://docs.ovito.org/python/introduction/installation.html#ovito-pro-integrated-interpreter):
