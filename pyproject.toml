@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.urls]
-repository = "https://github.com/nnn911/GenerateRandomSolution"
+repository = "https://github.com/ovito-org/GenerateRandomSolution"
 
 [project.entry-points.'OVITO.Modifier']
 "Generate Random Solution" = "GenerateRandomSolution:GenerateRandomSolution"
