@@ -10,7 +10,7 @@ from traits.api import Bool, Int, ListFloat
 class GenerateRandomSolution(ModifierInterface):
     only_selected = Bool(False, label="Only selected")
     concentrations = ListFloat([0.5, 0.5], label="Concentrations", minlen=1)
-    seed = Int(1234, label="Seed")
+    seed = Int(1323, label="Seed")
 
     def modify(self, data: DataCollection, frame: int, **kwargs):
         if (self.only_selected) and "Selection" not in data.particles.keys():

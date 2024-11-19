@@ -4,10 +4,13 @@ OVITO [Python modifier](https://docs.ovito.org/python/introduction/custom_modifi
 ## Description
 Python modifier for OVITO that changes the particle types in the whole data collection or a selected subset of particles to match a user-provided target concentration. The new particle types are distributed randomly to approximate a perfect random solution. The modifier can be installed either into *OVITO Pro* or the [OVITO Python module](https://pypi.org/project/ovito/) Python module using *pip*.
 
-## Parameters 
-- `only_selected` / "only selected": Apply the modifier only to the selected particles.
-- `concentrations` / "Concentrations": List defining the target concentrations. Their sum has to be equal to 1. 
-- `seed` / "Seed": Starting value for the random number generation. 
+## Parameters
+
+| GUI Label           | Python name         | Description                                                                 | Default Value  | 
+|---------------------|---------------------|-----------------------------------------------------------------------------|----------------|
+| **Only selected**   |`only_selected`      | Apply the modifier only to the selected particles.                          | `False`        |
+| **Concentrations**  | `concentrations`    | List defining the target concentrations. Their sum has to be equal to 1.    | `[0.5, 0.5]`   |
+| **Seed**            | `seed`              | Starting value for the random number generation.                            | `1323`         |
 
 ## Examples
 - All examples rely on [fcc.lmp](examples/fcc.lmp) as input structure. 
