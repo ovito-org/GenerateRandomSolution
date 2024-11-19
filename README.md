@@ -6,11 +6,11 @@ Python modifier for OVITO that changes the particle types in the whole data coll
 
 ## Parameters
 
-| GUI Label           | Python name         | Description                                                                 | Default Value  | 
-|---------------------|---------------------|-----------------------------------------------------------------------------|----------------|
-| **Only selected**   |`only_selected`      | Apply the modifier only to the selected particles.                          | `False`        |
-| **Concentrations**  | `concentrations`    | List defining the target concentrations. Their sum has to be equal to 1.    | `[0.5, 0.5]`   |
-| **Seed**            | `seed`              | Starting value for the random number generation.                            | `1323`         |
+| GUI name           | Python name      | Description                                                              | Default Value |
+|--------------------|------------------|--------------------------------------------------------------------------|---------------|
+| **Only selected**  | `only_selected`  | Apply the modifier only to the selected particles.                       | `False`       |
+| **Concentrations** | `concentrations` | List defining the target concentrations. Their sum has to be equal to 1. | `[0.5, 0.5]`  |
+| **Seed**           | `seed`           | Starting value for the random number generation.                         | `1323`        |
 
 ## Examples
 - All examples rely on [fcc.lmp](examples/fcc.lmp) as input structure. 
