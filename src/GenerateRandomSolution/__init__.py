@@ -26,6 +26,9 @@ class GenerateRandomSolution(ModifierInterface):
             else np.count_nonzero(data.particles["Selection"])
         )
 
+        if "Particle Type" not in data.particles:
+            data.particles_.create_property("Particle Type")
+
         # Extend particle types if necessary
         while len(self.concentrations) > len(data.particles["Particle Type"].types):
             new_id = len(data.particles["Particle Type"].types) + 1
