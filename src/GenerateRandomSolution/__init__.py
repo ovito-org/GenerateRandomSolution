@@ -4,12 +4,12 @@
 from ovito.data import DataCollection, ParticleType, DataTable, ElementType
 from ovito.pipeline import ModifierInterface
 import numpy as np
-from traits.api import Bool, Int, ListFloat
+from traits.api import Bool, Int, List
 
 
 class GenerateRandomSolution(ModifierInterface):
     only_selected = Bool(False, label="Only selected")
-    concentrations = ListFloat([0.5, 0.5], label="Concentrations", minlen=1)
+    concentrations = List([0.5, 0.5], label="Concentrations", minlen=1)
     seed = Int(1323, label="Seed")
 
     def modify(self, data: DataCollection, frame: int, **kwargs):
