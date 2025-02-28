@@ -14,6 +14,7 @@ readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
     "ovito >= 3.9.1"
+    "setuptools"
 ]
 
 [project.urls]
