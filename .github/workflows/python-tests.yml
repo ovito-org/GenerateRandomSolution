@@ -31,7 +31,7 @@ jobs:
     - name: Install apt dependencies
       if: matrix.os == 'ubuntu-latest'
       run: |
-        sudo apt install -y libegl1 libegl1-mesa libegl-mesa0 libopengl0
+        sudo apt install -y libegl1 libopengl0
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v6
       with:
