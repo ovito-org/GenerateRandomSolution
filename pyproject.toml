@@ -9,7 +9,7 @@ description = "OVITO Python modifier to chang the particle type values to create
 keywords = ["ovito", "ovito-extension"]
 authors = [{name = "Daniel Utt", email = "utt@ovito.org"}]
 maintainers = [{name = "Daniel Utt", email = "utt@ovito.org"}]
-license = MIT
+license = "MIT"
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
